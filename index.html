@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <title>Form JS</title>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Registration form</h1>
+        </div>
+      </div>
+      <form class="form-horizontal" name="myForm" onsubmit="return validateForm();">
+        <div class="form-group">
+          <label for="username" class="col-xs-offset-1 col-xs-3 control-label">Username</label>
+          <div class="col-xs-8">
+            <input type="text" name = "fname" class="form-control" id="username" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password" class="col-xs-offset-1 col-xs-3 control-label">Password</label>
+          <div class="col-xs-8">
+            <input type="text" class="form-control" id="password" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Name" class="col-xs-offset-1 col-xs-3 control-label">Name</label>
+          <div class="col-xs-8">
+            <input type="text" class="form-control" id="name" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Adress" class="col-xs-offset-1 col-xs-3 control-label">Adress</label>
+          <div class="col-xs-8">
+            <input type="text" class="form-control" id="adress" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Country" class="col-xs-offset-1 col-xs-3 control-label">Country</label>
+          <div class="col-xs-8">
+            <select class="form-control">
+              <option></option>
+              <option>Lithuania</option>
+              <option>Latvia</option>
+              <option>Estonia</option>
+              <option>Poland</option>
+              <option>Sweden</option>
+              </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="ZIP code" class="col-xs-offset-1 col-xs-3 control-label">ZIP code</label>
+          <div class="col-xs-8">
+            <input type="text" class="form-control" id="zip" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Email" class="col-xs-offset-1 col-xs-3 control-label">Email</label>
+          <div class="col-xs-8">
+            <input type="text" class="form-control" id="email" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="male" class="col-xs-offset-1 col-xs-3 control-label">Sex</label>
+          <div class="col-xs-8">
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="male" value="Male">
+             Male
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="female" value="Female">
+            Female
+          </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Language" class="col-xs-offset-1 col-xs-3 control-label">Language</label>
+          <div class="col-xs-8">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="english" value="English"> English
+              </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="other" value="other"> Other
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="About" class="col-xs-offset-1 col-xs-3 control-label">About</label>
+          <div class="col-xs-8">
+            <textarea class="form-control" rows="4" placeholder = "optional"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-offset-4 col-xs-2">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+          <div class="col-xs-3">
+            <button type="reset" class="btn btn-default">Reset</button>
+          </div>
+        </div>
+      </form>
+    </header>
+  </body>
+  <script src = mano.js>
+  </script>
+</html>
