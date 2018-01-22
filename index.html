@@ -16,48 +16,48 @@
           <h1>Registration form</h1>
         </div>
       </div>
-      <form class="form-horizontal" name="myForm" onsubmit="return validateForm();">
+      <form class="form-horizontal" name="myForm" >
         <div class="form-group">
           <label for="username" class="col-xs-offset-1 col-xs-3 control-label">Username</label>
           <div class="col-xs-8">
-            <input type="text" name = "fname" class="form-control" id="username" placeholder="">
+            <input type="text" name = "username" class="form-control" id="username" placeholder="required, 5-12 characters">
           </div>
         </div>
         <div class="form-group">
           <label for="password" class="col-xs-offset-1 col-xs-3 control-label">Password</label>
           <div class="col-xs-8">
-            <input type="text" class="form-control" id="password" placeholder="">
+            <input type="text" class="form-control" id="password" placeholder="required, 7-12 characters">
           </div>
         </div>
         <div class="form-group">
           <label for="Name" class="col-xs-offset-1 col-xs-3 control-label">Name</label>
           <div class="col-xs-8">
-            <input type="text" class="form-control" id="name" placeholder="">
+            <input type="text" class="form-control" id="name" placeholder="required, letters only">
           </div>
         </div>
         <div class="form-group">
           <label for="Adress" class="col-xs-offset-1 col-xs-3 control-label">Adress</label>
           <div class="col-xs-8">
-            <input type="text" class="form-control" id="adress" placeholder="">
+            <input type="text" class="form-control" id="adress" placeholder="optional">
           </div>
         </div>
         <div class="form-group">
-          <label for="Country" class="col-xs-offset-1 col-xs-3 control-label">Country</label>
+          <label for="Country" class="col-xs-offset-1 col-xs-3 control-label" placeholder="required">Country</label>
           <div class="col-xs-8">
-            <select class="form-control">
-              <option></option>
-              <option>Lithuania</option>
-              <option>Latvia</option>
-              <option>Estonia</option>
-              <option>Poland</option>
-              <option>Sweden</option>
+            <select class="form-control " >
+              <option value ="-" selected disabled hidden>required</option>
+              <option value ="0">Lithuania</option>
+              <option value ="1">Latvia</option>
+              <option value ="2">Estonia</option>
+              <option value ="3">Poland</option>
+              <option value ="4">Sweden</option>
               </select>
           </div>
         </div>
         <div class="form-group">
           <label for="ZIP code" class="col-xs-offset-1 col-xs-3 control-label">ZIP code</label>
           <div class="col-xs-8">
-            <input type="text" class="form-control" id="zip" placeholder="">
+            <input type="text" class="form-control" id="zip" placeholder="required, numbers only">
           </div>
         </div>
         <div class="form-group">
@@ -68,43 +68,51 @@
         </div>
         <div class="form-group">
           <label for="male" class="col-xs-offset-1 col-xs-3 control-label">Sex</label>
-          <div class="col-xs-8">
-          <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="male" value="Male">
+          <div class="col-xs-5">
+            <label class="radio-inline">
+            <input type="radio" name="radio" id="male" value="Male">
              Male
           </label>
           <label class="radio-inline">
-            <input type="radio" name="inlineRadioOptions" id="female" value="Female">
+            <input type="radio" name="radio" id="female" value="Female">
             Female
           </label>
           </div>
-        </div>
-        <div class="form-group">
-          <label for="Language" class="col-xs-offset-1 col-xs-3 control-label">Language</label>
-          <div class="col-xs-8">
-            <label class="checkbox-inline">
-              <input type="checkbox" id="english" value="English"> English
+          <div class="col-xs-3">
+            <div id="required">
+            <h5>required</h5>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Language" class="col-xs-offset-1 col-xs-3 control-label">Language</label>
+            <div class="col-xs-5">
+              <label class="checkbox-inline">
+              <input type="checkbox" name="checkbox" id="english" value="English"> English
               </label>
             <label class="checkbox-inline">
-              <input type="checkbox" id="other" value="other"> Other
+              <input type="checkbox" name="checkbox" id="other" value="other"> Other
             </label>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="About" class="col-xs-offset-1 col-xs-3 control-label">About</label>
-          <div class="col-xs-8">
-            <textarea class="form-control" rows="4" placeholder = "optional"></textarea>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-xs-offset-4 col-xs-2">
-            <button type="submit" class="btn btn-default">Submit</button>
-          </div>
-          <div class="col-xs-3">
-            <button type="reset" class="btn btn-default">Reset</button>
-          </div>
-        </div>
-      </form>
+            </div>
+            <div class="col-xs-3">
+              <div id="required2">
+            <h5>required</h5>
+            </div>
+            </div>
+            <div class="form-group">
+              <label for="About" class="col-xs-offset-1 col-xs-3 control-label">About</label>
+              <div class="col-xs-8">
+                <textarea class="form-control" rows="4" placeholder = "optional"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-offset-4 col-xs-2">
+                <button type="button" class="btn btn-default" onclick="validateForm()">Submit</button>
+              </div>
+              <div class="col-xs-3">
+                <button type="reset" class="btn btn-default">Reset</button>
+              </div>
+            </div>
+        </form>
     </header>
   </body>
   <script src = mano.js>

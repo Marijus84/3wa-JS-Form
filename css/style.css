@@ -1,0 +1,11 @@
+  ::placeholder {
+    color: #555 !important;
+  }
+
+  .red::placeholder {
+    color: red !important;
+  }
+
+  .red{
+    color: red;
+  }
